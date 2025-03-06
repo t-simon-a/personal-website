@@ -1,0 +1,43 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+	background-color: black;
+	color: white;
+	font-family: monospace;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+#terminal {
+	width: 100vw;
+	height: 100vh;
+	background: #111;
+	padding: 10px;
+	overflow-y: auto;
+	white-space: pre-wrap;
+	display: flex;
+	flex-direction: column;
+}
+.input-line { display: flex; }
+.prompt { color: #00ff00; margin-right: 5px; }
+input, textarea {
+	background: none;
+	border: none;
+	color: white;
+	font-family: monospace;
+	font-size: 16px;
+	outline: none;
+	flex-grow: 1;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+.editor { border: 1px solid #00ff00; padding: 5px; }
+.ascii-art {
+	color: #00ff00;
+	font-size: 16px;
+	font-family: monospace;
+}
